@@ -18,13 +18,13 @@ app.get('/results' , (req , res)=>{
 
 })
 app.get('/results/:result/' , (req , res)=>{
-    console.log(req.params.result)
+    
     let id = req.params.result
     let idformat = id.toString()
     result.map((resu)=>{
         if(idformat == resu.id){
             res.send(resu)
-            console.log(resu)
+           
             
         }
         
